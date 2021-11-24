@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
  */
 public class AspectRatio implements Parcelable {
 
+
     @Nullable
     private final String mAspectRatioTitle;
     private final float mAspectRatioX;
