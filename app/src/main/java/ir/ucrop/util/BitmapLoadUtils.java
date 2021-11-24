@@ -6,6 +6,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.Point;
+import android.media.ExifInterface;
 import android.net.Uri;
 import android.util.Log;
 import android.view.Display;
@@ -14,12 +15,13 @@ import android.view.WindowManager;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import ir.ucrop.callback.BitmapLoadCallback;
-
 import java.io.Closeable;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.concurrent.Executors;
+
+import ir.ucrop.callback.BitmapLoadCallback;
+import ir.ucrop.task.BitmapLoadTask;
 
 
 /**
